@@ -1,0 +1,124 @@
+html {
+	background: #fff;
+
+}
+
+body {
+	max-width: 1200px;
+	background: #fff;
+	border: 5px ridge black;
+	margin: 2rem auto;
+	font-family: system-ui, sans-serif;
+	line-height: 1.6;
+	padding: 0 1rem;
+}
+
+h1, h2 {
+	border-bottom: 1px solid #ddd;
+}
+
+h3 {
+	border-bottom: 2px solid black;
+	padding-bottom: 0.25rem;
+	width: calc(25% + 5px);
+
+}
+
+a {
+	color: #0056b3;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+section {
+	border-bottom-color: black;
+	border-bottom-width: 3px;
+	border-bottom-style: groove;
+	padding-bottom: 4rem;
+
+}
+
+.navbar {
+	display: flex;
+	border: 3px solid black;
+	padding: 0.25rem 0.75rem;
+	align-items: center;
+	justify-content: space-between;
+	margin: 2rem 0.5rem;
+
+}
+
+.nav_links {
+	display: flex;
+	gap: 1.5rem;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+}
+
+.nav_links a {
+	text-decoration: none;
+	font-size: 20px;
+	color: #222;
+}
+
+.nav_links a:hover {
+	text-decoration: underline;
+}
+
+.hero_section {
+	display: flex;
+	gap: 20%;
+
+}
+
+.resume_btn {
+	padding: 0.75rem 3rem;
+	border: 3px solid black;
+	box-shadow: 5px 10px black;
+
+}
+
+.project_card_cont {
+	display: block;
+
+}
+
+.project_card {
+	/*flex: 1 1 calc(45% - 2rem);*/
+	border: 3px solid grey;
+	padding: 5px 20px;
+	margin: 3rem 1rem;
+
+}
+
+.main_photo {
+	width: 300px;
+	height: auto;
+	border: 3px ridge black;
+	box-shadow: 5px 10px 5px grey;
+
+}
+
+.placard_cont {
+	display: flex;
+	gap: 1rem;
+
+}
+
+.placard_cont p {
+	width: fit-content;
+	height: fit-content;
+	border: 2px solid blue;
+	background-color: blue;
+	color: white;
+	padding: 0.25rem 0.5rem;
+
+}
+
+
+
