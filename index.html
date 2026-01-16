@@ -4,19 +4,26 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        />
 		<title>Jalani Eanochs - Home</title>
 	</head>
 	<body>
 		<header>
 			<nav class="navbar">
 				<div>
-					<img src="" alt=""/>
+          <a href="/"><i style="font-size: 1.5rem; color: black;" class="fa fa-home" aria-hidden="true"></i></a>
 				</div>
 
+        <!-- Igonring this for now. 
+          This will come into play when there are additional pages
 				<ul class="nav_links">
-					<li><a href="">About</a></li>
+					<li><a href="/">About</a></li>
 					<li><a href="">Project</a></li>
 				</ul>
+        --->
 
 			</nav>
 		</header>
@@ -43,7 +50,7 @@
 					</div>
 
 					<!-- This is the download link for the resume. -->
-					<a class="resume_btn" href="" target="_blank">See My Resume Here</a>
+					<a class="resume_btn" href="assets/pdfs/Resume.pdf" target="_blank">See My Resume Here</a>
 				</div>
 
 				<!-- Good headshot here. -->
@@ -54,32 +61,108 @@
 
 			<!-- The project cards go here. -->
 			<section class="project_section">
+
 				<h1>Engineering Projects</h1>
 				<div class="project_card_cont">
+
 					<div class="project_card">
 						<h2>FEM Solver for Ordinary Differential Equations</h2>
-						<!-- Need a photo here.
-							Will probably use a photo of a solution state.
-							The cards will probably need to be on a row by themsevles. -->
-						<p>Using the GNU Scientific Library as the mathematical backend, the solver is currently capable of solving ordinary differential equations (ODE) with constant coefficients via the finite element method. The equation can either be homogenous or nonhomeogenous.</p>
+						<div class="project_card_cont_content">
+							<div>
+								<p>Using the GNU Scientific Library as the mathematical backend, the solver is currently capable of solving ordinary differential equations (ODE) with constant coefficients via the finite element method. The equation can either be homogenous or nonhomeogenous.</p>
+
+								<div class="project_skill_cont">
+									<h3>Skills and Frameworks Used</h3>
+									<div>
+										<p>C</p>
+										<p>GNU Scientific Library</p>
+										<p>Git</p>
+										<p>FEA</p>
+									</div>
+								</div>
+
+								<div class="project_link_cont">
+                  <!-- This will be added later, probably.
+									<a href="">Go to Project Page</a>
+                  -->
+									<a href="https://github.com/jeanochs/ODE-Solver.git" target="_blank"><i class="fa-brands fa-github"></i> Go to the Repository</a>
+								</div>
+
+							</div>
+
+							<div>
+								<img src="assets/images/special_sine_results.png" alt=""/>
+							</div>
+						</div>
 					</div>
+
 					<div class="project_card">
 						<h2>Tessella: FEA Battery Analysis</h2>
-						<!-- Need a photo here. -->
-						<p>The working program of my graduate thesis, Project Tessella was designed to analyze the behavior of solid-state batteries. With each bettery ions grain modeled as a seed region in a Voronoi tessellation, the battery's ion concentration is predictively modeled using first princpiles and the finite element method.</p>
+						<div class="project_card_cont_content">
+							<div>
+								<p>The working program of my graduate thesis, Project Tessella was designed to analyze the behavior of solid-state batteries. With each bettery ions grain modeled as a seed region in a Voronoi tessellation, the battery's ion concentration is predictively modeled using first princpiles and the finite element method.</p>
+
+								<div class="project_skill_cont">
+									<h3>Skills and Frameworks Used</h3>
+									<div>
+										<p>Python</p>
+										<p>SciPy/NumPy/Tkinter</p>
+										<p>SFePy</p>
+										<p>FEA</p>
+									</div>
+								</div>
+
+								<div class="project_link_cont">
+                  <!-- This isn't quite ready, so this will be handled later.
+									<a href="">Go to Project Page</a>
+									<a href="">Associated Link</a>
+                  -->
+								</div>
+
+							</div>
+
+							<div>
+								<img src="assets/images/tessella_icon.png" alt=""/>
+							</div>
+						</div>
 					</div>
+
 					<div class="project_card">
 						<h2>CFD Analysis of Drone Propeller</h2>
-						<!-- Need a photo here. -->
-						<p>During my senior year at Tuskegee University's Additive Manufaturing Laboratory, I was assigned to create a computational model in ANSYS to model the thrust force of an APC drone propeller. The results correlated very closely with experimental resutls, verifying the model's accuracy..</p>
+						<div class="project_card_cont_content">
+							<div>
+								<p>During my senior year at Tuskegee University's Additive Manufaturing Laboratory, I was assigned to create a computational model in ANSYS to model the thrust force of an APC drone propeller. The results correlated very closely with experimental resutls, verifying the model's accuracy..</p>
+
+								<div class="project_skill_cont">
+									<h3>Skills and Frameworks Used</h3>
+									<div>
+										<p>ANSYS Fluent</p>
+										<p>CFD</p>
+										<p>Aerodynamics</p>
+									</div>
+								</div>
+
+								<div class="project_link_cont">
+                  <!-- This will all be handled later; need to see exactly what I can post here.
+									<a href="">Go to Project Page</a>
+									<a href="">Associated Link</a>
+                  -->
+								</div>
+
+							</div>
+							<div>
+								<img src="assets/images/cfd_propeller_image.png" alt="">
+							</div>
+						</div>
 					</div>
 				</div>
+
 			</section>
 
 			<section class="skill_section">
 				<h1>Skills and Experience</h1>
 				<div>
-					<h2>Languages</h2>
+					<h2>Programming Languages</h2>
 					<div class="placard_cont">
 						<p>C</p>
 						<p>C++</p>
@@ -92,7 +175,10 @@
 						<p>ANSYS</p>
 						<p>Git</p>
 						<p>Docker</p>
-						<p>Embedded Programming</p>
+            <p>GNU Scientific Library (C)</p>
+            <p>SFML/ImGUI (C++)</p>
+            <p>NumPy/SciPy/Matplotlib (Python)</p>
+            <p>Tkinter (Python)</p>
 					</div>
 				</div>
 			</section>
@@ -100,6 +186,11 @@
 		</main>
 		<footer>
 			<h2>Contact Me!</h2>
+      <div class="social_links">
+        <a href="https://github.com/jeanochs" target="_blank" aria-label-"GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://instagram.com/thewraith315" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="mailto:jalanieanochs@gmail.com" aria-label="Send Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
 		</footer>
 	</body>
 </html>

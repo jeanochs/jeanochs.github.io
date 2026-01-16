@@ -1,1 +1,4 @@
 *.sw*
+portfolios_of_interest.txt
+*.odt
+.~lock*
