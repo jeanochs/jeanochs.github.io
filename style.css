@@ -70,32 +70,6 @@ section {
 }
 
 
-@media (max-wdith: 768px) {
-	.hero_section {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 4%;
-
-	}
-
-	.hero_section > :first-child {
-		flex: 0 0 70%;
-
-	}
-
-	.hero_section > :last-child {
-		flex: 0 0 26%;
-
-	}
-
-	.resume_btn {
-		border: 1px solid black;
-		box-shadow: 2px 5px black;
-		text-wrap: wrap;
-
-	}
-
-}
 
 .hero_section {
 	display: flex;
@@ -120,6 +94,33 @@ section {
 	border: 3px solid black;
 	box-shadow: 5px 10px black;
 	text-wrap: wrap;
+
+}
+
+@media screen and (max-width: 768px) {
+	.hero_section {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 4%;
+
+	}
+
+	.hero_section > :first-child {
+		flex: 0 0 70%;
+
+	}
+
+	.hero_section > :last-child {
+		flex: 0 0 26%;
+
+	}
+
+	.resume_btn {
+		border: 1px solid black;
+		box-shadow: 2px 5px black;
+		text-wrap: wrap;
+
+	}
 
 }
 
