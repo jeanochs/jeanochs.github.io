@@ -69,26 +69,69 @@ section {
 	text-decoration: underline;
 }
 
+
+@media (max-wdith: 768px) {
+	.hero_section {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 4%;
+
+	}
+
+	.hero_section > :first-child {
+		flex: 0 0 70%;
+
+	}
+
+	.hero_section > :last-child {
+		flex: 0 0 26%;
+
+	}
+
+	.resume_btn {
+		border: 1px solid black;
+		box-shadow: 2px 5px black;
+		text-wrap: wrap;
+
+	}
+
+}
+
 .hero_section {
 	display: flex;
-	gap: 20%;
+	flex-wrap: wrap;
+	gap: 10%;
+
+}
+
+.hero_section > :first-child {
+	flex: 0 0 60%;
+
+}
+
+.hero_section > :last-child {
+	flex: 0 0 30%;
 
 }
 
 .resume_btn {
-	padding: 0.75rem 3rem;
+	max-width: 30%;
+	padding: 0.75rem 1rem;
 	border: 3px solid black;
 	box-shadow: 5px 10px black;
+	text-wrap: wrap;
 
 }
 
 .project_card_cont {
-	display: block;
+	display: flex;
+	flex-wrap: wrap;
 
 }
 
 .project_card_cont_content {
 	display: flex;
+	flex-wrap: wrap;
 	gap: 5%;
 
 }
@@ -163,11 +206,13 @@ section {
 	height: auto;
 	border: 3px ridge black;
 	box-shadow: 5px 10px 5px grey;
+	margin-top: 3em;
 
 }
 
 .placard_cont {
 	display: flex;
+	flex-wrap: wrap;
 	gap: 1rem;
 
 }
