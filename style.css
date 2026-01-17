@@ -13,6 +13,17 @@ body {
 	padding: 0 1rem;
 }
 
+@media screen and (max-width: 768px) {
+	body {
+		background: #fff;
+		border: 5px ridge black;
+		font-family: system-ui, sans-serif;
+		line-height: 1.6;
+
+	}
+
+}
+
 h1, h2 {
 	border-bottom: 1px solid #ddd;
 }
@@ -101,17 +112,16 @@ section {
 	.hero_section {
 		display: flex;
 		flex-wrap: wrap;
-		gap: 4%;
 
 	}
 
 	.hero_section > :first-child {
-		flex: 0 0 70%;
+		flex: 1;
 
 	}
 
 	.hero_section > :last-child {
-		flex: 0 0 26%;
+		flex: 1;
 
 	}
 
