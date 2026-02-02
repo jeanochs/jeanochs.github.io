@@ -2,3 +2,5 @@
 portfolios_of_interest.txt
 *.odt
 .~lock*
+*.html
+!index.html

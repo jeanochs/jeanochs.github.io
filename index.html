@@ -8,7 +8,13 @@
       rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
 		<title>Jalani Eanochs - Home</title>
+
 	</head>
 	<body>
 		<header>
@@ -17,7 +23,7 @@
           <a href="/"><i style="font-size: 1.5rem; color: black;" class="fa fa-home" aria-hidden="true"></i></a>
 				</div>
 
-        <!-- Igonring this for now. 
+        <!-- Ignoring this for now. 
           This will come into play when there are additional pages
 				<ul class="nav_links">
 					<li><a href="/">About</a></li>
@@ -30,27 +36,19 @@
 		<main>
 			<section class="hero_section">
 				<div>
-					<h1>Hi! My name is Jalani Eanochs!</h1>
+					<h1>Jalani Eanochs - Computational Engineer</h1>
 
-					<!-- First "About Me" paragraph -->
+					<!-- "About Me" section -->
 					<div>
-						<p>I am a computational engineer whose roles include</p>
-						<ul>
-							<li>Engineering Analysis via FEA/CFD</li>
-							<li>Embedded Programming</li>
-							<li>Robotics</li>
-							<li>General Engineering Design (CAD/3d Printing)</li>
-						</ul>
-					</div>
+            <p>Physics-based Modeling | FEA + CFD | Embedded Systems</p>
 
-					<!-- Second "About Me" paragraph -->
-					<div>
+            <p>I build and validate numerical tools that solve engineering boundary-value problems and deliver actionable simulation insights for complex physical systems.</p>
 						<p>I have a passion of applying the principles of physics and mechanics to real-life problems.</p>
-						<p>I particuraly enjoy simulating and writing programs that simulate physical processes, from heat trasnfer problems to physics.</p>
+            <p>Projects: Solid-state battery modeling, FEA solver, CFD analysis → see below.</p>
 					</div>
 
 					<!-- This is the download link for the resume. -->
-          <div class="resume_btn"><a href="assets/pdfs/Resume.pdf" target="_blank">See My Resume Here</a></div>
+          <div class="resume_btn"><i class="fa-solid fa-download"></i><a href="assets/pdfs/Resume.pdf" target="_blank">See My Resume Here</a></div>
 				</div>
 
 				<!-- Good headshot here. -->
@@ -62,45 +60,14 @@
 			<!-- The project cards go here. -->
 			<section class="project_section">
 
-				<h1>Engineering Projects</h1>
+				<h1>Featured Engineering Projects</h1>
 				<div class="project_card_cont">
 
 					<div class="project_card">
-						<h2>FEM Solver for Ordinary Differential Equations</h2>
+						<h2>Tessella: Automated FEA Battery Analysis Pipeline</h2>
 						<div class="project_card_cont_content">
 							<div>
-								<p>Using the GNU Scientific Library as the mathematical backend, the solver is currently capable of solving ordinary differential equations (ODE) with constant coefficients via the finite element method. The equation can either be homogenous or nonhomeogenous.</p>
-
-								<div class="project_skill_cont">
-									<h3>Skills and Frameworks Used</h3>
-									<div>
-										<p>C</p>
-										<p>GNU Scientific Library</p>
-										<p>Git</p>
-										<p>FEA</p>
-									</div>
-								</div>
-
-								<div class="project_link_cont">
-                  <!-- This will be added later, probably.
-									<a href="">Go to Project Page</a>
-                  -->
-									<a href="https://github.com/jeanochs/ODE-Solver.git" target="_blank"><i class="fa-brands fa-github"></i> Go to the Repository</a>
-								</div>
-
-							</div>
-
-							<div>
-								<img src="assets/images/special_sine_results.png" alt=""/>
-							</div>
-						</div>
-					</div>
-
-					<div class="project_card">
-						<h2>Tessella: FEA Battery Analysis</h2>
-						<div class="project_card_cont_content">
-							<div>
-								<p>The working program of my graduate thesis, Project Tessella was designed to analyze the behavior of solid-state batteries. With each bettery ions grain modeled as a seed region in a Voronoi tessellation, the battery's ion concentration is predictively modeled using first princpiles and the finite element method.</p>
+								<p>The working program of my graduate thesis, Project Tessella was designed to analyze the behavior of solid-state batteries. With each battery ion grain modeled as a seed region in a Voronoi tessellation, the battery's ion concentration is predictively modeled using first principles and the finite element method.</p>
 
 								<div class="project_skill_cont">
 									<h3>Skills and Frameworks Used</h3>
@@ -108,7 +75,6 @@
 										<p>Python</p>
 										<p>SciPy/NumPy/Tkinter</p>
 										<p>SFePy</p>
-										<p>FEA</p>
 									</div>
 								</div>
 
@@ -128,16 +94,15 @@
 					</div>
 
 					<div class="project_card">
-						<h2>CFD Analysis of Drone Propeller</h2>
+						<h2>CFD Analysis of Drone Propeller using Ansys</h2>
 						<div class="project_card_cont_content">
 							<div>
-								<p>During my senior year at Tuskegee University's Additive Manufaturing Laboratory, I was assigned to create a computational model in ANSYS to model the thrust force of an APC drone propeller. The results correlated very closely with experimental resutls, verifying the model's accuracy..</p>
+								<p>During my senior year at Tuskegee University's Additive Manufacturing Laboratory, I was assigned to create a computational model in Ansys Fluent to model the thrust force of an APC drone propeller. The results correlated very closely with experimental results, verifying the model's accuracy.</p>
 
 								<div class="project_skill_cont">
 									<h3>Skills and Frameworks Used</h3>
 									<div>
 										<p>ANSYS Fluent</p>
-										<p>CFD</p>
 										<p>Aerodynamics</p>
 									</div>
 								</div>
@@ -155,32 +120,83 @@
 							</div>
 						</div>
 					</div>
+
+					<div class="project_card">
+						<h2>FEM Solver for Ordinary Differential Equations</h2>
+						<div class="project_card_cont_content">
+							<div>
+								<p>Using the GNU Scientific Library as the mathematical backend, the solver is currently capable of solving ordinary differential equations (ODE) with constant coefficients via the finite element method. The equation can either be homogeneous or nonhomogeneous.</p>
+
+								<div class="project_skill_cont">
+									<h3>Skills and Frameworks Used</h3>
+									<div>
+										<p>C</p>
+										<p>GNU Scientific Library</p>
+									</div>
+								</div>
+
+								<div class="project_link_cont">
+                  <!-- This will be added later, probably.
+									<a href="">Go to Project Page</a>
+                  -->
+									<a href="https://github.com/jeanochs/ODE-Solver.git" target="_blank"><i class="fa-brands fa-github"></i> Go to the Repository</a>
+								</div>
+
+							</div>
+
+							<div>
+								<img src="assets/images/special_sine_results.png" alt=""/>
+							</div>
+						</div>
+					</div>
+
 				</div>
+
+        <!-- Will be included once the Project page is added and completed.
+        <div class="project_page_link_main">
+          <div>
+            <p style="font-size: x-large; ">See the full list of projects here.</p>
+            <i class="fa-solid fa-angles-down" style="font-size: 48px; "></i>
+          </div>
+        </div>
+
+        This leads to nothing right now.
+        -->
 
 			</section>
 
 			<section class="skill_section">
 				<h1>Skills and Experience</h1>
+
 				<div>
-					<h2>Programming Languages</h2>
+					<h2>Core/Daily Use</h2>
 					<div class="placard_cont">
-						<p>C</p>
-						<p>C++</p>
-						<p>Python</p>
+            <ul>
+              <li><strong>Python</strong> - Numerical methods, solvers, visualization</li>
+              <li><strong>C/C++</strong> - Performance-critical computation, memory-aware design</li>
+            </ul>
 					</div>
 				</div>
+
 				<div>
-					<h2>Technologies and Frameworks</h2>
+					<h2>Strong Working Knowledge</h2>
 					<div class="placard_cont">
-						<p>ANSYS</p>
-						<p>Git</p>
-						<p>Docker</p>
-            <p>GNU Scientific Library (C)</p>
-            <p>SFML/ImGUI (C++)</p>
-            <p>NumPy/SciPy/Matplotlib (Python)</p>
-            <p>Tkinter (Python)</p>
+            <ul>
+              <li><strong>Finite Element Methods</strong> - Formulation, implementation, validation</li>
+              <li><strong>CFD</strong> - Simulation setup, boundary conditions, interpolation</li>
+            </ul>
 					</div>
 				</div>
+
+        <div>
+          <h2>Applied Knowledge</h2>
+          <div class="placard_cont">
+            <ul>
+              <li><strong>Embedded Systems</strong> - Microcontrollers, low-level interfacing</li>
+              <li><strong>Robotics</strong> - Kinematics, control concepts</li>
+            </ul>
+          </div>
+        </div>
 			</section>
 
 		</main>
